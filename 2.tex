@@ -1,0 +1,29 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{fancyhdr} % For custom header and footer
+\usepackage{lipsum}   % For dummy text
+\usepackage{lastpage} % To get the number of pages
+
+% Set up the header and footer
+\pagestyle{fancy}
+\fancyhf{} % Clear default header and footer
+\fancyhead[C]{\textbf{Title of Document}} % Header
+\fancyfoot[L]{MAKAUT} % Footer (left side)
+\fancyfoot[R]{Page \thepage\ of \pageref{LastPage}} % Footer (right side with page number)
+
+\begin{document}
+
+% Title of the document
+\title{Title of Document}
+\author{}
+\date{}
+\maketitle
+
+% Section 1
+\section{Section 1}
+\lipsum[1] % Dummy text
+
+% Section 2
+\section{Section 2}
+\lipsum[2] % Dummy text
+
+\end{document}
